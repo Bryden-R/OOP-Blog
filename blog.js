@@ -22,7 +22,7 @@ class BlogUser {
         this.posts.push(post);
     }
 
-    // editexisting post 
+    // edit existing post 
     editPost(index, newTitle, newContent) {
         if (index >= 0 && index < this.posts.length) {
             const post = this.posts[index];
