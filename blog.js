@@ -64,8 +64,8 @@ class BlogUser {
 const Bryden = new BlogUser('bryden', 'Bryden Ramruka');
 const Urisha = new BlogUser('urisha', 'Urisha Nankoo'); 
 
-Bryden.createPost('My First Post', 'This is the content of my first post.');
-Bryden.createPost('My Second Post', 'This is the content of my second post.');
+Bryden.createPost('First Post', 'This is my first post.');
+Bryden.createPost('Second Post', 'This is the second post.');
 
 Urisha.createPost('Urisha\'s First Post', 'Content of Urisha\'s first post.');
 
@@ -75,12 +75,12 @@ Bryden.displayPosts();
 console.log('Urisha\'s Posts:');
 Urisha.displayPosts();
 
-Bryden.editPost(0, 'Updated First Post', 'Updated content of my first post.');
+Bryden.editPost(0, 'Updated First Post', 'Updated my first post.');
 
 console.log('Bryden\'s Posts After Editing:');
 Bryden.displayPosts();
 
 Bryden.deleteLastPost();
 
-console.log('Bryden\'s Posts After Deletion:');
+console.log('Bryden\'s Posts After Deleting:');
 Bryden.displayPosts();
